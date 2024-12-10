@@ -10,7 +10,7 @@ The frontend is React (Vite) + Typescript, with a NodeJS + Express backend.
 To install the server, use 
 
 ```bash
-    npm run install-all
+npm run install-all
 ```
 
 this installs dependencies for _both_ the server & client, normal npm install will only do so for the server
