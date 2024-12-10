@@ -1,0 +1,15 @@
+.email-body{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    align-items: center;
+}
+
+.email-icon{
+    color: var(--secondary_text_colour);
+}
+
+.email-text{
+    width: max-content;
+    color:var(--secondary_text_colour);
+}

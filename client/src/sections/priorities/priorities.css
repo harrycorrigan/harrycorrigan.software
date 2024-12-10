@@ -1,0 +1,29 @@
+.priorities-section{
+    padding-bottom: 5rem;
+    padding-top: 2.5rem;
+}
+
+.priorityCards-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.prioritySection-header{
+    color: var(--primary_text_colour);
+    padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+    .priorityCards-container {
+        align-items: center;
+        flex-direction: column;
+    }
+    .priorities-section{
+        text-align: center;
+    }
+}

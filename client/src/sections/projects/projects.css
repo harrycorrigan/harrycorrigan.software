@@ -1,0 +1,28 @@
+.projectsSection-projects{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.projectsSection-title{
+    color: var(--primary_text_colour);
+    text-align: center;
+}
+
+
+@media screen and (max-width: 900px) {
+    .projectsSection-projects {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.projectsSection-disclaimer{
+    color: var(--secondary_text_colour);
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 100%;
+    padding-bottom: 1rem;
+}

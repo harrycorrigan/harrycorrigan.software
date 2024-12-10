@@ -1,0 +1,18 @@
+.socialIcons-container{
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    width: max-content;
+    gap: 10px;
+}
+
+.socialIcons-icon{
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcon{
+    height: 2.5rem;
+    margin: auto;
+    width: min-content;
+}

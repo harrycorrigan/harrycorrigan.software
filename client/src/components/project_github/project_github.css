@@ -1,0 +1,16 @@
+.projectGithub-body{
+    padding-top: 1rem;
+    height: 30px;
+    width: max-content;
+}
+
+.projectGithub-icon{
+    height: 100%;
+    width: 100%;
+    color: var(--primary_text_colour);
+}
+
+.projectGithub-icon:hover{
+    color: white;
+    cursor: pointer;
+}

@@ -1,0 +1,19 @@
+.inputBox-input{
+    width: 100%;
+    background-color: var(--tertiary_colour);
+    resize: none; /* Disable resizing */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.inputBox-input:focus{
+    border: none;
+    outline: 1px solid gray;
+}
+
+.inputBox-label{
+    color: var(--primary_text_colour);
+    font-weight: bold;
+}

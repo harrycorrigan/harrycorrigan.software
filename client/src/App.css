@@ -1,0 +1,125 @@
+#root {
+  text-align: left;
+
+  --emphasis_colour_darker: #be3b76;
+  --emphasis_colour: #F72585;
+  --emphasis_colour_lighter: #f35099;
+
+  --title_text_colour:  #FFFFFF;
+
+  --primary_text_colour_lighter: #dfdfdf;
+  --primary_text_colour:  #C6C6C6;
+  --secondary_text_colour:  #9C9C9C;
+  --tertiary_text_colour:  #898989;
+
+  --landing_gradient:  linear-gradient(-110.493deg, #160C2C 0%, #3A0CA3 100%);
+  --primary_colour:  #3A0CA3;
+  --secondary_colour:  #25076B;
+  --tertiary_colour: #160C2C;
+
+  --font_multiplier: 1.618;
+
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #root { 
+    --text_font_size: 1rem;
+    --large_font_size: calc(var(--text_font_size) * calc(var(--font_multiplier) * 0.5));
+    --subtext_font_size: calc(var(--text_font_size) * var(--font_multiplier));
+    --header_font_size: calc(var(--text_font_size) * calc(var(--font_multiplier) * 1.5 ));
+    --title_font_size: calc(var(--header_font_size) * 2);
+    --section_margin: 1rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #root { 
+    --text_font_size: 1rem;
+    --large_font_size: calc(var(--text_font_size) * calc(var(--font_multiplier) * 0.5));
+    --subtext_font_size: calc(var(--text_font_size) * var(--font_multiplier));
+    --header_font_size: calc(var(--text_font_size) * calc(var(--font_multiplier) * 1.5 ));
+    --title_font_size: calc(var(--header_font_size) * 2);
+    --section_margin: 1rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #root {
+    --text_font_size: 1.25rem;
+    --large_font_size: calc(var(--text_font_size) * calc(var(--font_multiplier) * 0.5));
+    --subtext_font_size: calc(var(--text_font_size) * var(--font_multiplier));
+    --header_font_size: calc(var(--text_font_size) * calc(var(--font_multiplier) * 1.5 ));
+    --title_font_size: calc(var(--header_font_size) * 1.5);
+    --section_margin: 2rem;
+  }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #root {
+    --text_font_size: 1.25rem;
+    --large_font_size: calc(var(--text_font_size) * calc(var(--font_multiplier) * 0.5));
+    --subtext_font_size: calc(var(--text_font_size) * var(--font_multiplier));
+    --header_font_size: calc(var(--text_font_size) * calc(var(--font_multiplier) * 1.5 ));
+    --title_font_size: calc(var(--header_font_size) * 1.5);
+    --section_margin: 4rem;
+  }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #root {
+    --text_font_size: 1.25rem;
+    --large_font_size: calc(var(--text_font_size) * calc(var(--font_multiplier) * 0.75));
+    --subtext_font_size: calc(var(--text_font_size) * var(--font_multiplier));
+    --header_font_size: calc(var(--text_font_size) * calc(var(--font_multiplier) * 1.5 ));
+    --title_font_size: calc(var(--header_font_size) * 1.5);
+    --section_margin: 4rem;
+  }
+}
+
+p{
+  padding: 0;
+  margin: 0;
+}
+
+.title-text{
+  font-weight: bold;
+  font-size: var(--title_font_size);
+  color: var(--title_text_colour)
+}
+
+.header-text{
+  font-weight: bold;
+  font-size: var(--header_font_size);
+}
+
+.sub-text{
+  font-size: var(--subtext_font_size);
+}
+
+.large-text{
+  font-size: var(--large_font_size);
+}
+
+.text{
+  font-size: var(--text_font_size);
+}
+
+
+.section{
+  margin-left: var(--section_margin);
+  margin-right: var(--section_margin);
+}
+
+
+.resumeButton-container{
+  position: absolute;
+  top: 1rem;
+  left: 100%;
+  transform: translateX(-130%)
+}
