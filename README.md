@@ -1,5 +1,5 @@
 ﻿# My portfolio source code.
-![Preview of website](https://github.com/harrycorrigan/harrycorrigan.software/blob/main/hcsoftware-img.png?raw=true)
+![Preview of website](./hcsoftware-img.png?raw=true)
 
 This is a NodeJS application running my portfolio.
 
