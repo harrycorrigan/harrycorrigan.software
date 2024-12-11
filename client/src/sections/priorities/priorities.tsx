@@ -11,17 +11,21 @@ export function PrioritiesSection(){
             <div className="priorityCards-container">
                 <PriorityCard
                     icon={<CommunicationIcon/>}
-                    description="With proper communication, i can ensure you get exactly the product you're expecting."
+                    description={
+                        `
+                        Clear & consistent communication ensures every project aligns perfectly with your expectations. 
+                        `
+                    }
                     title="Communication"
                 />
                 <PriorityCard
                     icon={<IterationIcon/>}
-                    description="Iterating over things allows you to give  regular input to achieve your vision."
+                    description="Regular input through iteration allows me to bring your vision to life seamlessly."
                     title="Iteration"
                 />
                 <PriorityCard
                     icon={<CustomSatisfactionIcon/>}
-                    description="With proper communication, i can ensure you get exactly the product you're expecting."
+                    description="It's important to me that all customers are satisfied with the product they receive."
                     title="Customer Satisfaction"
                 />
             </div>

@@ -15,4 +15,9 @@
     height: 2.5rem;
     margin: auto;
     width: min-content;
+    color: #BCBCBC;
+}
+.socialIcon:hover{
+    color: white;
+    cursor: pointer;
 }

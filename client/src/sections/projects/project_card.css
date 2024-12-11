@@ -18,7 +18,8 @@
 
 .projectCard-description{
     width: 100%;
-    color: var(--secondary_text_colour)
+    color: var(--secondary_text_colour);
+    padding-bottom: 1rem;
 }
 
 

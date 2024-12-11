@@ -1,6 +1,6 @@
 .priorityCard-body{
     width: 20vw;
-    height: 50vh;
+    height: 60vh;
     border-radius: 15px;
     min-width: 300px;
     background-color: var(--secondary_colour);
@@ -34,6 +34,6 @@
 
 .priorityCard-text{
     text-align: center;
-    width: 70%;
+    width: 85%;
     color: var(--secondary_text_colour);
 }

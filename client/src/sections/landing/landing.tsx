@@ -11,7 +11,8 @@ export function LandingSection(){
         <p className='sub-text title-subtext'>Software Engineer <span className="title-subtext-delimiter">•</span> Full Stack Developer</p>
 
         <div className='landingSection-buttons'>
-          <Button style="PRIMARY">Contact</Button><Button style="SECONDARY">Learn More</Button>
+          <Button style="PRIMARY" onClick={() => window.location.href = "#contact"}>Contact</Button>
+          <Button style="SECONDARY" onClick={() => window.location.href = "#about"}>Learn More</Button>
         </div>
       </div>
     </div>

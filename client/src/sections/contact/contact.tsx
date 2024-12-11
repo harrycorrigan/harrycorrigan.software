@@ -9,7 +9,7 @@ function ContactText(){
         <div className="contactText-body">
             <div className="contactText-topSection">
                 <p className="contactText-title header-text">Contact Me.</p>
-                <p className="contactText-text sub-text">Leave your name & email along with a description of what you need, i’ll get back to you as soon as possible</p>
+                <p className="contactText-text sub-text">Leave your name & email along with a description of what you need. I will get back to you as soon as possible</p>
             </div>
             <div className="contactText-bottomSection">
                 <SocialIcons/>
