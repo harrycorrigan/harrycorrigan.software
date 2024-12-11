@@ -3,6 +3,7 @@
     flex-direction: row;
     gap: 2px;
     align-items: center;
+    width: max-content;
 }
 
 .email-icon{
@@ -12,4 +13,10 @@
 .email-text{
     width: max-content;
     color:var(--secondary_text_colour);
+}
+
+.email-body:hover .email-text,
+.email-body:hover .email-icon {
+    color: white !important;
+    cursor: pointer;
 }
