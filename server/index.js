@@ -1,6 +1,7 @@
 const path = require('path');
 const express = require('express');
 var bodyParser = require('body-parser');
+const {SitemapStream, streamToPromise} = require("sitemap")
 
 const app = express()
 const port = 3000
@@ -16,6 +17,21 @@ app.use((err, req, res, next) => {
       return res.status(422).send("Invalid JSON" ); // Bad request
   }
   next();
+});
+
+app.get('/sitemap.xml', (req, res) => {
+  const sitemap = new SitemapStream({ hostname: 'https://harrycorrigan.software' });
+
+  sitemap.write({ url: '/', changefreq: 'monthly', priority: 1 })
+  sitemap.write({ url: '/#about', changefreq: 'monthly', priority: 0.8 })
+  sitemap.write({ url: '/#contact', changefreq: 'monthly', priority: 0.8 })
+
+  sitemap.end();
+
+  streamToPromise(sitemap).then((sm) => {
+    res.header('Content-Type', 'application/xml');
+    res.send(sm);
+  });
 });
 
 require("./api/submit_contact")(app)

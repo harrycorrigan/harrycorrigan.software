@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://harrycorrigan.software/sitemap.xml
