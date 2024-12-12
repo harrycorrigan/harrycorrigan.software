@@ -1,5 +1,5 @@
 const { check, validationResult } = require('express-validator');
-
+const { rateLimit } = require("express-rate-limit");
 
 const nodemailer = require('nodemailer');
 const mailTransporter = nodemailer.createTransport({
@@ -11,6 +11,15 @@ const mailTransporter = nodemailer.createTransport({
     pass: process.env.CONTACT_EMAIL_PWD
   }
 });
+
+
+const limiter = rateLimit({
+  windowMs: 5 * 60 * 1000, // 5 minutes
+  limit: 5,
+  standardHeaders: true,
+  legacyHeaders: false,
+});
+
 
 function sendContactEmail(ipAddr, name, email, message){
   let mailDetails = {
@@ -48,7 +57,7 @@ var contactFormValidation = [
 ]
 
 module.exports = function(app){
-    app.post("/api/submitContact", contactFormValidation, (req, res) => {
+    app.post("/api/submitContact", contactFormValidation, limiter, (req, res) => {
       const errors = validationResult(req);
       if(!errors.isEmpty()){
         return res.status(422).json({ errors: errors.array() });
