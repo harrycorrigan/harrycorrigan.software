@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 
 const app = express()
 const port = 3000
-app.set("trust proxy", 1)
+app.set("trust proxy", 2)
 
 app.use( bodyParser.json() );
 app.use(express.json({"limit": "5mb"}));
