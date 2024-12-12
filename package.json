@@ -6,13 +6,15 @@
   "scripts": {
     "install-all": "npm ci && cd client && npm ci",
     "build": "cd client && npm run build",
-
-    "serve": "node server/index.js",
+    "serve": "node --env-file=./.env server/index.js",
     "dev": "cd client && npm run dev"
   },
   "author": "Harry Corrigan",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.2"
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.0",
+    "nodemailer": "^6.9.16"
   }
 }

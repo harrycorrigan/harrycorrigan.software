@@ -86,6 +86,7 @@ function ContactForm(){
             return;
         }
         xhr.open("POST", "/api/submitContact", true)
+        xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
         xhr.send(JSON.stringify(currContactInfo))
         xhr.onreadystatechange = () => {
             if(xhr.readyState == xhr.DONE){
