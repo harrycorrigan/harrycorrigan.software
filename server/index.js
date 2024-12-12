@@ -23,9 +23,6 @@ app.get('/sitemap.xml', (req, res) => {
   const sitemap = new SitemapStream({ hostname: 'https://harrycorrigan.software' });
 
   sitemap.write({ url: '/', changefreq: 'monthly', priority: 1 })
-  sitemap.write({ url: '/#about', changefreq: 'monthly', priority: 0.8 })
-  sitemap.write({ url: '/#contact', changefreq: 'monthly', priority: 0.8 })
-
   sitemap.end();
 
   streamToPromise(sitemap).then((sm) => {
