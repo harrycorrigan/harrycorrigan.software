@@ -8,8 +8,9 @@ const port = 3000
 app.use(express.static(path.resolve(__dirname, '../client/dist')));
 
 // Handle GET requests to /api route
-app.get("/api", (req, res) => {
-  res.json({ message: "Hello from server!" });
+app.post("/api/submitContact", (req, res) => {
+  req.body
+
 });
 
 // All other GET requests not handled before will return our React app

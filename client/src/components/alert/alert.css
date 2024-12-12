@@ -1,0 +1,41 @@
+.alert-wrapper{
+    width: max-content;
+    overflow: hidden;
+    height: 0vh;
+
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    
+    padding-left: 3vh;
+    padding-right: 3vh;
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.alert-ok{
+    background-color: rgb(22, 135, 22);
+}
+.alert-error{
+    background-color: rgb(146, 12, 12);
+}
+
+
+.alert-wrapper-open{
+    transition: 1s;
+    height: 5vh;
+}
+
+.alert-wrapper-closed{
+    transition: 1s;
+    height: 0;
+}
+
+.alert-text{
+    padding: 0;
+    margin: 0;
+    color: white;
+}

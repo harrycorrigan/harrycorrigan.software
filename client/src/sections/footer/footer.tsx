@@ -19,7 +19,7 @@ function FooterSection({title, links}: FooterSectionProps){
             <div className="footerSection-links">
                 {
                     links.map((e) => {
-                        return <p className="footerSection-link text" onClick={() => {window.location.href = e.link}}>{e.label}</p>
+                        return <p className="footerSection-link text" key={`footerLink-${e.label}`} onClick={() => {window.location.href = e.link}}>{e.label}</p>
                     })
                 }
             </div>
