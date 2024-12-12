@@ -63,7 +63,7 @@ module.exports = function(app){
         return res.status(422).json({ errors: errors.array() });
       }
   
-      let ipAddr = req.socket.remoteAddress;
+      let ipAddr = req.ip;
       let name = req.body.name;
       let email = req.body.email;
       let message = req.body.message;
